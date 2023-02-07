@@ -1,20 +1,24 @@
-#Kundeservice {
-    float: left;
-    width: 33%;
-    height: 200px;
-}
-#Kjøpsinformasjon {
-    float: left;
-    width: 34%;
-    height: 200px;
-}
-#Melbofooter {
-    float: right;
-    width: 33%;
-    height: 200px;
-}
-.ul-nobullet{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+ /*footer*/
+ 
+    #Kundeservice {
+        float: left;
+        width: 33%;
+        height: 200px;
+    }
+    #Kjøpsinformasjon {
+        float: left;
+        width: 34%;
+        height: 200px;
+    }
+    #Melbofooter {
+        float: right;
+        width: 33%;
+        height: 200px;
+    }
+    .ul-nobullet{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+/*Bildet slideshow*/
