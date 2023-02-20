@@ -1,85 +1,116 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta>
-        <link rel="Stylesheet" type="text/css" href="felles.css">
+        <title>Melbo Sko AS</title>
+        <link rel="stylesheet" href="felles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>Melbo Sko</header>
-        <p>Your fashion, your way!</p>
-                <nav id="navigationBar">
-            <ul>
-                <li>
-                    <i style='font-size:24px' class='fas'>&#xf0c9;</i>
-                </li>
-                <ul>
-                    <li><a href="home.html">Hjem</a></li>
-                    <li><a href="products.html">Produkter</a>
-                        <ul>
-                            <li><a href="vinter.html">Vinter</a></li>
-                            <li><a href="vår.html">Vår</a></li>
-                            <li><a href="sommer.html">Sommer</a></li>
-                            <li><a href="høst.html">Høst</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <li><a href="about.html">Om oss</a></li>
-                <li><a href="blog.html">Blogg</a></li>
+    <header>
+        <!--Info om netthandel hos Melbo Sko AS-->
+        <table class="netthandel-info">
+            <tr>
+                <th><p><img class="hakesymbol" src="pictures/checkmark.png">Trygg Handel og Rask Levering</p></th>
+                <th><p><img class="hakesymbol" src="pictures/checkmark.png">Personlig Service</p></th>
+                <th><p><img class="hakesymbol" src="pictures/checkmark.png">30 dagers åpent kjøp</p></th>
+            </tr>
+        </table>
+        <!--------------------------------->
+                <!--Navigasjonsbar-->
+        <!--------------------------------->
+        <nav>
+            <!--Logo-->
+            <a href="Res_nav.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
+            <!--Øvre del av Navigasjonsbaren-->
+            <!--Login-Ønskeliste-Handlekurv-->
+            <ul class="list1">
+                <div class="log-like-handlekurv">
+                    <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
+                    <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
+                    <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
+                </div>
             </ul>
+            <!--Søkefelt-->
+            <div class="searchbar">
+                <form action="#">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+            <!--Nedre del av Navigasjonsbaren-->
+            <ul class="list2">
+                <li><a href="Res_nav.html">FORSIDE</a></li>
+                <li><a href="#">PRODUKTER</a></li>
+                <li><a href="#">OM OSS</a></li>
+                <li><a href="#">BLOGG</a></li>
+            </ul>
+            </table>
         </nav>
-        
-        <!--tilbud banner-->
 
+        <!-- <img class="img-logo" src="Pictures/Melbo_logo.png" alt="logo"> -->
+    </header>
+
+    <div class="tilbud">
+        <h1 class="forside-overskrift">Skoene som er perfekte for deg!</h1>
+        <article class="img-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate efficitur dapibus. Quisque sapien est, convallis et odio sit amet, vulputate tristique est. Integer nec erat nunc. Nullam euismod quam urna, sit amet tincidunt purus auctor nec. Ut sagittis porta enim, eu tincidunt mauris elementum sed. </p>
+
+            <p>Curabitur eleifend tellus nisl, ut ultrices libero accumsan ac. Suspendisse porta tristique scelerisque. Quisque dolor tortor, mollis et justo sed, volutpat elementum libero. Cras bibendum semper neque, et luctus massa scelerisque vitae. Curabitur hendrerit, neque a porttitor tincidunt, orci turpis imperdiet nulla, at consequat urna justo at lacus.</p>
+            
+        </article>
         <!--Bildet slideshow med tekst over -->
-            <!--slideshow container -->
-            <div id="slideshow">
-                <div class="slide-wrapper">
+        <!--slideshow container -->
+        <div id="slideshow">
+            <div class="slide-wrapper">
                 <!-- bilder -->
-                    <div class="slide">
-                        <img src="B.jpg" class="slide-number">
-                    </div>
-                    <div class="slide">
-                        <img src="R.jpg" class="slide-number">
-                    </div>
-                    <div class="slide">
-                        <img src="B.jpg" class="slide-number">
-                    </div>
-                    <div class="slide">
-                        <img src="R.jpg" class="slide-number">
-                    </div>
-                 </div>
-             </div>
+                <div class="slide">
+                    <img src="B.jpg" class="slide-number">
+                </div>
+                <div class="slide">
+                    <img src="R.jpg" class="slide-number">
+                </div>
+                <div class="slide">
+                    <img src="B.jpg" class="slide-number">
+                </div>
+                <div class="slide">
+                    <img src="R.jpg" class="slide-number">
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!--footer-->
-        <footer>
-                <div id="Kundeservice">
-                <h3>Kundeservice</h3>
-                <ul class="ul-nobullet">
-                    <li><a href="">Kontakt oss</a></li>
-                    <li><a href="">Størrelseguide</a></li>
-                    <li><a href="">Ofte stilte spørsmål</a></li>
-                    <li><a href="">Reparering av sko</a></li>
-                </ul>
-                </div>
-                <div id="Kjøpsinformasjon">
-                    <h3>Kjøpsinformasjon</h3>
-                    <ul class="ul-nobullet">
-                        <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
-                        <li><a href="">Retur</a></li>
-                        <li><a href="">Levering og frakt</a></li>
-                        <li><a href="">Reklamasjon og garanti</a></li>
-                    </ul>
-                </div>
-                <div id="Melbofooter">
-                    <h3>Melbo sko</h3>
-                    <ul class="ul-nobullet">
-                        <li><a href="">KundeKlubb</a></li>
-                        <li><a href="">Medlemsfordeler</a></li>
-                        <li><a href="">Nyhetsbrev</a></li>
-                        <li><a href="">Bærekraft</a></li>
-                        <li><a href="">Ledige stillinger</a></li>
-                    </ul>
-                </div>
-        </footer>
+    <footer>
+        <div id="Kundeservice">
+            <h3>Kundeservice</h3>
+            <ul class="ul-nobullet">
+                <li><a href="">Kontakt oss</a></li>
+                <li><a href="">Størrelseguide</a></li>
+                <li><a href="">Ofte stilte spørsmål</a></li>
+                <li><a href="">Reparering av sko</a></li>
+            </ul>
+        </div>
+        <div id="Kjøpsinformasjon">
+            <h3>Kjøpsinformasjon</h3>
+            <ul class="ul-nobullet">
+                <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
+                <li><a href="">Retur</a></li>
+                <li><a href="">Levering og frakt</a></li>
+                <li><a href="">Reklamasjon og garanti</a></li>
+            </ul>
+        </div>
+        <div id="Melbosko">
+            <h3>Melbo sko</h3>
+            <ul class="ul-nobullet">
+                <li><a href="">KundeKlubb</a></li>
+                <li><a href="">Medlemsfordeler</a></li>
+                <li><a href="">Nyhetsbrev</a></li>
+                <li><a href="">Bærekraft</a></li>
+                <li><a href="">Ledige stillinger</a></li>
+            </ul>
+        </div>
+    </footer>
     </body>
 </html>
