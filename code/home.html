@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Melbo Sko AS</title>
-        <link rel="stylesheet" href="felles.css">
+        <link rel="stylesheet" type="text/css" href="felles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +22,10 @@
         <!--------------------------------->
         <nav>
             <!--Logo-->
-            <a href="Res_nav.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
+            <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
             <!--Øvre del av Navigasjonsbaren-->
             <!--Login-Ønskeliste-Handlekurv-->
-            <ul class="list1">
+            <ul>
                 <div class="log-like-handlekurv">
                     <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
                     <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
@@ -41,12 +41,14 @@
             </div>
             
             <!--Nedre del av Navigasjonsbaren-->
-            <ul class="list2">
-                <li><a href="home.html">FORSIDE</a></li>
-                <li><a href="#">PRODUKTER</a></li>
-                <li><a href="about.html">OM OSS</a></li>
-                <li><a href="#">BLOGG</a></li>
-            </ul>
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="home.html">FORSIDE</a></li>
+                    <li><a href="#">PRODUKTER</a></li>
+                    <li><a href="about.html">OM OSS</a></li>
+                    <li><a href="#">BLOGG</a></li>
+                </ul>
+            </div>
             </table>
         </nav>
 
@@ -55,6 +57,9 @@
 
     <div class="tilbud">
         <h1 class="forside-overskrift">Skoene som er perfekte for deg!</h1>
+        <div class="nyheter">
+            <a href="blog.html"><img src="Pictures/tilbud.PNG" alt="blogg-og-tilbud"></a>
+        </div>
         <article class="img-info">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate efficitur dapibus. Quisque sapien est, convallis et odio sit amet, vulputate tristique est. Integer nec erat nunc. Nullam euismod quam urna, sit amet tincidunt purus auctor nec. Ut sagittis porta enim, eu tincidunt mauris elementum sed. </p>
 
@@ -67,49 +72,51 @@
             <div class="slide-wrapper">
                 <!-- bilder -->
                 <div class="slide">
-                    <img src="B.jpg" class="slide-number">
+                    <img src="Pictures/B.jpg" class="slide-number">
                 </div>
                 <div class="slide">
-                    <img src="R.jpg" class="slide-number">
+                    <img src="Pictures/kastel-madla.jpeg" class="slide-number">
                 </div>
                 <div class="slide">
-                    <img src="B.jpg" class="slide-number">
+                    <img src="Pictures/emerica-low-vulc.jpg" class="slide-number">
                 </div>
                 <div class="slide">
-                    <img src="R.jpg" class="slide-number">
+                    <img src="Pictures/mountain-shoes.jpg" class="slide-number">
                 </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div id="Kundeservice">
-            <h3>Kundeservice</h3>
-            <ul class="ul-nobullet">
-                <li><a href="">Kontakt oss</a></li>
-                <li><a href="">Størrelseguide</a></li>
-                <li><a href="">Ofte stilte spørsmål</a></li>
-                <li><a href="">Reparering av sko</a></li>
-            </ul>
-        </div>
-        <div id="Kjøpsinformasjon">
-            <h3>Kjøpsinformasjon</h3>
-            <ul class="ul-nobullet">
-                <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
-                <li><a href="">Retur</a></li>
-                <li><a href="">Levering og frakt</a></li>
-                <li><a href="">Reklamasjon og garanti</a></li>
-            </ul>
-        </div>
-        <div id="Melbosko">
-            <h3>Melbo sko</h3>
-            <ul class="ul-nobullet">
-                <li><a href="">KundeKlubb</a></li>
-                <li><a href="">Medlemsfordeler</a></li>
-                <li><a href="">Nyhetsbrev</a></li>
-                <li><a href="">Bærekraft</a></li>
-                <li><a href="">Ledige stillinger</a></li>
-            </ul>
+        <div class="footer-elements">
+            <div id="Kundeservice">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="">Størrelseguide</a></li>
+                    <li><a href="">Ofte stilte spørsmål</a></li>
+                    <li><a href="">Reparering av sko</a></li>
+                </ul>
+            </div>
+            <div id="Kjøpsinformasjon">
+                <h3>Kjøpsinformasjon</h3>
+                <ul>
+                    <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
+                    <li><a href="">Retur</a></li>
+                    <li><a href="">Levering og frakt</a></li>
+                    <li><a href="">Reklamasjon og garanti</a></li>
+                </ul>
+            </div>
+            <div id="Melbosko">
+                <h3>Melbo sko</h3>
+                <ul>
+                    <li><a href="">KundeKlubb</a></li>
+                    <li><a href="">Medlemsfordeler</a></li>
+                    <li><a href="">Nyhetsbrev</a></li>
+                    <li><a href="">Bærekraft</a></li>
+                    <li><a href="">Ledige stillinger</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     </body>
