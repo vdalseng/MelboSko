@@ -84,16 +84,12 @@ th {
     padding-top: 20px;
 }
 
-input[type=text] {
-    border: 2px solid #3e3e3e;  
-}
-
 input[type=text]{
     text-align: left;
     font-size: 20;
     width: 250px;
     padding: 15px;
-
+    border: 2px solid #3e3e3e;
     /* Gjør at elementene får en sømløs overgang når skjermstørrelsen endres */
     transition-property: all;
     transition-duration: 300ms;
@@ -117,14 +113,14 @@ nav {
     margin: auto;
 }
 
-.list1 {
+/* .list1 {
     padding: 5px;
-}
+} */
 
 .log-like-handlekurv {
     float: right;
     vertical-align: top;
-    padding: 5px 15px 5px;
+    padding: 10px 20px 10px;
 }
 
 .log-like-handlekurv-ikon {
@@ -142,7 +138,7 @@ nav {
     border-radius: 10px;
 }
 
-.list2 {
+.bottom-nav {
     width: 100%;
     overflow: hidden;
     /* border-top: #3e3e3e 2px solid;
@@ -155,12 +151,12 @@ nav {
 
 }
 
-.list2 li {
+.bottom-nav li {
     padding: 0 15px 0 15px;
 }
 
 /* Border mellom navbar elementene */
-.list2 li a:hover{
+.bottom-nav li a:hover{
 
 /* Runde knapper for navbar elementene*/
     border-radius: 7px;
@@ -194,22 +190,42 @@ nav ul li a {
     font-family: 'Raleway', sans-serif;
 }
 
+.nyheter {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.nyheter img {
+    width: 627px;
+    height: 173px;
+}
+
 /* ------------------------------------- */
                 /*footer*/
 /* ------------------------------------- */
 
 footer {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
     background-color: grey;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    padding: 15px 0 15px 0;
 }
 
-footer h3, footer ul li a{
+.footer-elements {
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+footer h3, footer ul li a {
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -219,26 +235,9 @@ footer ul li a:hover {
     color: red;
 }
 
-/* footer h3, footer ul li {
-    color: black;
-} */
-
-#Kundeservice {
+#Kundeservice, #Kjøpsinformasjon, #Melbosko {
     float: left;
     width: 33%;
-}
-#Kjøpsinformasjon {
-    float: left;
-    width: 34%;
-}
-#Melbosko {
-    float: left;
-    width: 33%;
-}
-.ul-nobullet{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 /* ---------------------------------------- */
     /* Kode for slideshowet på forsiden */
@@ -255,15 +254,6 @@ footer ul li a:hover {
     transition-timing-function: ease-in-out;
 }
 
-/* Style each of the sides
-with a fixed width and height */
-.slide {
-    float: left;
-    height: 500px;
-    width: 700px;
-    box-shadow: 5px 0px 5px 0px black;
-}
-
 /* Add animation to the slides */
 .slide-wrapper {
 /* Calculate the total width on the
@@ -275,6 +265,15 @@ with a fixed width and height */
     animation: slide 10s ease infinite;
 }
 
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+    float: left;
+    height: 500px;
+    width: 700px;
+    text-align: center;
+}
+
 .slide-number {
     max-width: 700px;
     max-height: 500px;
@@ -283,19 +282,19 @@ with a fixed width and height */
 /* Set the background color
 of each of the slides */
 .slide:nth-child(1) {
-    background: green;
+    background: azure;
 }
 
 .slide:nth-child(2) {
-    background: pink;
+    background: azure;
 }
 
 .slide:nth-child(3) {
-    background: red;
+    background: azure;
 }
 
 .slide:nth-child(4) {
-    background: yellow;
+    background: azure;
 }
 
 /* Define the animation
@@ -340,7 +339,7 @@ for the slideshow */
     font-weight: 600;
 }
 
-/* Hvis skjermen til brukeren er mindre enn 750px i bredden vil disse endringene skje */
+/* Hvis skjermen til brukeren er mindre enn 800px i bredden vil disse endringene skje */
 @media only screen and (max-width: 800px) {
 
     .logo {
@@ -373,34 +372,6 @@ for the slideshow */
         margin: -10px;
     }
 
-    /* Kode for footer når skjermen er mindre enn 750px */
-
-    /* #Kundeservice {
-        float: none;
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-    }
-    #Kjøpsinformasjon {
-        float: none;
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-    }
-    #Melbosko {
-        float: none;
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-    }
-    .ul-nobullet{
-        list-style-type: none;
-    } */
-
-    /* Kode for slideshow når skjermen er mindre enn 750px*/
     /* Kode for slideshow når skjermen er mindre enn 750px*/
     #slideshow {
         overflow: hidden;
@@ -427,24 +398,6 @@ for the slideshow */
     /* Specify the animation with the
         duration and speed */
         animation: slide 10s ease infinite;
-    }
-    
-    /* Set the background color
-    of each of the slides */
-    .slide:nth-child(1) {
-        background: green;
-    }
-    
-    .slide:nth-child(2) {
-        background: pink;
-    }
-    
-    .slide:nth-child(3) {
-        background: red;
-    }
-    
-    .slide:nth-child(4) {
-        background: yellow;
     }
     
     /* Define the animation
@@ -477,30 +430,11 @@ for the slideshow */
         display: none;
     }
 
-    #Kundeservice {
-        float: none;
+    #Kundeservice, #Kjøpsinformasjon, #Melbosko {
         text-align: center;
         width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-    }
-    #Kjøpsinformasjon {
-        float: none;
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        margin-bottom: 15px;
-    }
-    #Melbosko {
-        float: none;
-        text-align: center;
-        width: 100%;
-        height: 100px;
         margin-bottom: 15px;
         padding-bottom: 20px;
-    }
-    .ul-nobullet{
-        list-style-type: none;
     }
 
     /* Kode for slideshow når skjermen er mindre enn 750px*/
@@ -529,24 +463,6 @@ for the slideshow */
     /* Specify the animation with the
         duration and speed */
         animation: slide 10s ease infinite;
-    }
-    
-    /* Set the background color
-    of each of the slides */
-    .slide:nth-child(1) {
-        background: green;
-    }
-    
-    .slide:nth-child(2) {
-        background: pink;
-    }
-    
-    .slide:nth-child(3) {
-        background: red;
-    }
-    
-    .slide:nth-child(4) {
-        background: yellow;
     }
     
     /* Define the animation
