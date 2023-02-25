@@ -232,7 +232,7 @@ footer ul li a:hover {
 
 /* Styling the area of the slides */
 #slideshow {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 20px 0px;
@@ -242,7 +242,7 @@ footer ul li a:hover {
 .slide-wrapper {
 /* Calculate the total width on the
     basis of number of slides */
-    width: calc(90% * 4);
+    width: calc(100% * 4);
 
 /* Specify the animation with the
     duration and speed */
@@ -253,14 +253,14 @@ footer ul li a:hover {
 with a fixed width and height */
 .slide {
     float: left;
-    width: 90%;
+    width: 25%;
     height: auto;
     text-align: center;
 }
 
 .slide-number {
-    max-width: 90%;
-    max-height: auto;
+    max-width: 60%;
+    max-height: 500px;
 }
 
 /* Set the background color
@@ -288,20 +288,47 @@ for the slideshow */
 /* Calculate the margin-left for
     each of the slides */
     20% {
-    margin-left: 0px;
+    margin-left: 0%;
     }
 
     40% {
-    margin-left: calc(-90% * 1);
+    margin-left: calc(-100% * 1);
     }
 
     60% {
-    margin-left: calc(-90% * 2);
+    margin-left: calc(-100% * 2);
     }
 
     80% {
-    margin-left: calc(-90% * 3);
+    margin-left: calc(-100% * 3);
     }
+}
+
+
+
+/* ------------------------------------------ */
+/* --------------Om Oss/Kontakt-------------- */
+/* ------------------------------------------ */
+
+.kidgroup-shoes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.kontaktOss {
+    float: bottom;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-bottom: 200px;
+    margin: auto;
 }
 
 /* ----------------------------------------------------------------------------------- */
