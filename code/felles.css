@@ -102,11 +102,6 @@ nav ul li a {
     font-family: 'Raleway', sans-serif;
 }
 
-/* .bottom-nav ul {
-    position: sticky;
-    top: 0;
-} */
-
 .bottom-nav li {
     padding: 0 15px 0 15px;
 }
@@ -386,8 +381,7 @@ for the slideshow */
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 100%;
-    height: auto;
+    width: 50%;
 }
 
 .omoss {
@@ -398,15 +392,22 @@ for the slideshow */
 
 .kontaktOss {
     float: bottom;
-    display: block;
     text-align: center;
     border-radius: 20px;
     background-color: lightgray;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px;
-    margin-bottom: 200px;
-    margin: auto;
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin: auto auto 20px;
+    padding: 10px;
+}
+
+.kontaktOss h2, .kontaktOss p {
+    margin: 5px;
+}
+
+.kontaktOss a {
+    word-wrap: break-word;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -473,6 +474,14 @@ for the slideshow */
         margin-bottom: 15px;
         padding-bottom: 20px;
     }
+
+    .kidgroup-shoes {
+        width: 65%;
+    }
+
+    .kontaktOss {
+        width: 75%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -492,5 +501,9 @@ for the slideshow */
     .searchbar button {
         padding: 8px;
         margin: -3px;
+    }
+
+    .kidgroup-shoes {
+        width: 75%;
     }
 }
