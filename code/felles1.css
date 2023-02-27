@@ -9,6 +9,7 @@
 
 body {
     background-color: azure;
+    font-family: 'Raleway', sans-serif;
 }
 
 .netthandel-info {
@@ -208,6 +209,7 @@ footer ul li a:hover {
 .forside-overskrift {
     padding-top: 10px;
     text-align: center;
+    color: darkblue;
 }
 
 .nyheter {
@@ -317,6 +319,12 @@ for the slideshow */
     margin-right: auto;
     margin-top: 20px;
     width: 50%;
+}
+
+.omoss {
+    margin: auto;
+    max-width: 800px;
+    color: darkblue;
 }
 
 .kontaktOss {
