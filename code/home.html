@@ -19,54 +19,60 @@
             </ul>
         </div>
     </header>
-        <!--------------------------------->
-                <!--Navigasjonsbar-->
-        <!--------------------------------->
+    <!--------------------------------->
+            <!--Navigasjonsbar-->
+    <!--------------------------------->
     <nav>
-        <!--Logo-->
-        <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
-        <!--Øvre del av Navigasjonsbaren-->
-        <!--Login-Ønskeliste-Handlekurv-->
-        <ul>
-            <div class="log-like-handlekurv">
-                <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
-                <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
-                <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
+        <div class="nav-innhold">
+                <!--Logo-->
+            <div>
+                <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
             </div>
-        </ul>
-        <!--Søkefelt-->
-        <div class="searchbar">
-            <form action="#">
-                <input type="text" placeholder="Search..." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        
-        <!--Nedre del av Navigasjonsbaren-->
-        <div class="bottom-nav">
-            <ul>
-                <li><a href="home.html">FORSIDE</a></li>
-                <li><a href="products.html">PRODUKTER</a></li>
-                <li><a href="about.html">OM OSS</a></li>
-                <li><a href="blog.html">BLOGG</a></li>
-            </ul>
-        </div>
+            <!--Øvre del av Navigasjonsbaren-->
+            <!--Login-Ønskeliste-Handlekurv-->
+            <div>
+                <ul>
+                    <div class="log-like-handlekurv">
+                        <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
+                        <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
+                        <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
+                    </div>
+                </ul>
+            </div>
+            <!--Søkefelt-->
+            <div class="searchbar">
+                <form action="#">
+                    <input type="text" placeholder="Search..." name="search">
+                    <div class="fa fa-search"></div>
+                </form>
+            </div>
+            
+            <!--Nedre del av Navigasjonsbaren-->
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="home.html">FORSIDE</a></li>
+                    <li><a href="products.html">PRODUKTER</a></li>
+                    <li><a href="about.html">OM OSS</a></li>
+                    <li><a href="blog.html">BLOGG</a></li>
+                </ul>
+            </div>
 
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="home.html">FORSIDE</a>
-                <a href="products.html">PRODUKTER</a>
-                <a href="about.html">OM OSS</a>
-                <a href="blog.html">BLOGG</a>
-                <a href="#">LOGIN</a>
-                <a href="#">ØNSKELISTE</a>
-                <a href="#">HANDLEKURV</a>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="home.html">FORSIDE</a>
+                    <a href="products.html">PRODUKTER</a>
+                    <a href="about.html">OM OSS</a>
+                    <a href="blog.html">BLOGG</a>
+                    <a href="#">LOGIN</a>
+                    <a href="#">ØNSKELISTE</a>
+                    <a href="#">HANDLEKURV</a>
+                </div>
             </div>
-        </div>
-        <div class="burger-btn">
-            <span onclick="openNav()">&#9776;</span>
-            <script src="burger-meny.js"></script>
+            <div class="burger-btn">
+                <span onclick="openNav()">&#9776;</span>
+                <script src="burger-meny.js"></script>
+            </div>
         </div>
     </nav>
 
