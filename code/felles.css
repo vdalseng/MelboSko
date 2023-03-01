@@ -307,8 +307,7 @@ footer ul li a:hover {
 #slideshow {
     width: 100%;
     height: auto;
-    margin: 0 auto;
-    padding: 20px 0px;
+    margin: 20px auto;
 }
 
 /* Add animation to the slides */
@@ -376,8 +375,6 @@ for the slideshow */
     margin-left: calc(-100% * 3);
     }
 }
-
-
 
 /* ------------------------------------------ */
 /* --------------Om Oss/Kontakt-------------- */
