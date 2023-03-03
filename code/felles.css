@@ -195,10 +195,11 @@ nav ul li a {
     padding: 0.5rem;
     justify-content: space-between;
     width: 275px;
-    background-color: darkblue;
-    border-radius: 0.5rem;
-    color: azure;
-    box-shadow: 0rem 0rem 0.3rem rgb(0, 0, 72);
+    background-color: aquamarine;
+    /* border-radius: 0.5rem; */
+    color: black;
+    /* box-shadow: 0rem 0rem 0.3rem rgb(0, 0, 72); */
+    border-bottom: solid black;
 }
 
 .searchbar * {
@@ -209,12 +210,12 @@ input[type=text]{
     width: 240px;
     border: none;
     outline: none;
-    background-color: darkblue;
-    color: azure;
+    background-color: aquamarine;
+    color: black;
 }
 
 ::placeholder {
-    color: azure;
+    color: grey;
 }
 
 .searchbar button {
