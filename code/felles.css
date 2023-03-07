@@ -595,3 +595,38 @@ for the slideshow */
         width: 225px;
     }
 }
+
+
+
+/*----------------------------------------------------------------*/
+/*-----------------------css for blog siden-----------------------*/
+/*----------------------------------------------------------------*/
+.rtl {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.blogg-innhold {
+    float: right;
+    margin-right: 20%;
+}
+.H-Blogg{
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+.midl-bilder {
+    width: 300px;
+}
+
+.logo-linker-bildet {
+    width: 100px;
+}
+.logo-linker {
+    padding-top: 20px;
+}
+
