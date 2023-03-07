@@ -385,7 +385,8 @@ for the slideshow */
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 50%;
+    width: 80%;
+    max-width: 700px;
 }
 
 .omoss {
