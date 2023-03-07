@@ -263,7 +263,6 @@ footer ul li a:hover {
     color: red;
 }
 
-
 /* ------------------------------------------ */
 /* -----------------Forside------------------ */
 /* ------------------------------------------ */
@@ -428,6 +427,48 @@ for the slideshow */
     height: 40vh;
 }
 
+/*----------------------------------------------------------------*/
+/*-----------------------css for blogg siden-----------------------*/
+/*----------------------------------------------------------------*/
+.rtl {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.blogg-innhold {
+    text-align: center;
+    margin: auto;
+}
+.H-Blogg{
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.innlegg-linker {
+    margin: auto;
+    list-style-type: none;
+}
+
+.sosialemedier {
+    list-style-type: none;
+}
+
+.midl-bilder {
+    width: 300px;
+}
+
+.logo-linker-bildet {
+    width: 100px;
+}
+.logo-linker {
+    padding-top: 20px;
+}
+
 /* ----------------------------------------------------------------------------------- */
 /* -----------------Justering av elementene baser på skjermstørrelse------------------ */
 /* ----------------------------------------------------------------------------------- */
@@ -524,39 +565,5 @@ for the slideshow */
     .kidgroup-shoes {
         width: 75%;
     }
-}
-
-
-
-/*----------------------------------------------------------------*/
-/*-----------------------css for blog siden-----------------------*/
-/*----------------------------------------------------------------*/
-.rtl {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-.blogg-innhold {
-    float: right;
-    margin-right: 20%;
-}
-.H-Blogg{
-    padding-top: 10px;
-    text-align: center;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-}
-.midl-bilder {
-    width: 300px;
-}
-
-.logo-linker-bildet {
-    width: 100px;
-}
-.logo-linker {
-    padding-top: 20px;
 }
 
