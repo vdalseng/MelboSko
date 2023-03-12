@@ -263,7 +263,6 @@ footer ul li a:hover {
     color: red;
 }
 
-
 /* ------------------------------------------ */
 /* -----------------Forside------------------ */
 /* ------------------------------------------ */
@@ -386,7 +385,8 @@ for the slideshow */
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 50%;
+    width: 80%;
+    max-width: 700px;
 }
 
 .omoss {
@@ -427,6 +427,48 @@ for the slideshow */
 .kart iframe {
     width: 80%;
     height: 40vh;
+}
+
+/*----------------------------------------------------------------*/
+/*-----------------------css for blogg siden-----------------------*/
+/*----------------------------------------------------------------*/
+.rtl {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.blogg-innhold {
+    text-align: center;
+    margin: auto;
+}
+.H-Blogg{
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+.innlegg-linker {
+    margin: auto;
+    list-style-type: none;
+}
+
+.sosialemedier {
+    list-style-type: none;
+}
+
+.midl-bilder {
+    width: 300px;
+}
+
+.logo-linker-bildet {
+    width: 100px;
+}
+.logo-linker {
+    padding-top: 20px;
 }
 
 /* ----------------------------------------------------------------------------------- */
@@ -526,3 +568,4 @@ for the slideshow */
         width: 75%;
     }
 }
+
