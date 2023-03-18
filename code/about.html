@@ -18,11 +18,12 @@
             </ul>
         </div>
     </header>
-        <!--------------------------------->
-                <!--Navigasjonsbar-->
-        <!--------------------------------->
-        <nav>
-            <div class="nav-innhold">
+    <!--------------------------------->
+            <!--Navigasjonsbar-->
+    <!--------------------------------->
+    <nav>
+        <div class="nav-innhold">
+            <div class="top-nav">
                     <!--Logo-->
                 <div>
                     <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
@@ -30,42 +31,29 @@
                 <!--Øvre del av Navigasjonsbaren-->
                 <!--Login-Ønskeliste-Handlekurv-->
                 <div>
-                    <ul>
-                        <div class="log-like-handlekurv">
-                            <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
-                            <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
-                            <li><a href="#"><img class="log-like-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
-                        </div>
+                    <ul class="login-onskeliste-handlekurv">
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/login-icon.png"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/heart-icon.png"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/basket-icon.png"></a></li>
                     </ul>
                 </div>
                 <!--Søkefelt-->
                 <div class="searchbar">
                     <form action="#">
-                        <input type="text" placeholder="Search..." name="search">
-                        <div class="fa fa-search"></div>
+                        <input type="text" placeholder="Søk..." name="search">
+                        <div class="fa fa-search" style="float:right;"></div>
                     </form>
                 </div>
-                
-                <!--Nedre del av Navigasjonsbaren-->
-                <div class="bottom-nav">
-                    <ul>
-                        <li><a href="home.html">FORSIDE</a></li>
-                        <li><a href="products.html">PRODUKTER</a></li>
-                        <li><a href="about.html">OM OSS</a></li>
-                        <li><a href="blog.html">BLOGG</a></li>
-                    </ul>
-                </div>
-    
                 <div id="myNav" class="overlay">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <a href="home.html">FORSIDE</a>
-                        <a href="products.html">PRODUKTER</a>
-                        <a href="about.html">OM OSS</a>
-                        <a href="blog.html">BLOGG</a>
-                        <a href="#">LOGIN</a>
-                        <a href="#">ØNSKELISTE</a>
-                        <a href="#">HANDLEKURV</a>
+                        <a href="home.html">Forside</a>
+                        <a href="products.html">Produkter</a>
+                        <a href="about.html">Om oss</a>
+                        <a href="blog.html">Blogg</a>
+                        <a href="#">Login</a>
+                        <a href="#">Ønskeliste</a>
+                        <a href="#">Handlekurv</a>
                     </div>
                 </div>
                 <div class="burger-btn">
@@ -73,7 +61,17 @@
                     <script src="burger-meny.js"></script>
                 </div>
             </div>
-        </nav>
+            <!--Nedre del av Navigasjonsbaren-->
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="home.html">Forside</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="about.html">Om oss</a></li>
+                    <li><a href="blog.html">Blogg</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
         <!-- <img class="img-logo" src="Pictures/Melbo_logo.png" alt="logo"> -->
 
@@ -108,7 +106,7 @@
 
     <div class="kart">
         <h3>Du kan finne oss her!</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.673036450361!2d10.260582216090812!3d60.15303628195464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464107164b7bdf45%3A0x51b972d1b787785b!2sUniversitetet%20i%20S%C3%B8r%C3%B8st-Norge%20%E2%80%93%20campus%20Ringerike!5e0!3m2!1sno!2sno!4v1677628093784!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.673036450361!2d10.260582216090812!3d60.15303628195464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464107164b7bdf45%3A0x51b972d1b787785b!2sUniversitetet%20i%20S%C3%B8r%C3%B8st-Norge%20%E2%80%93%20campus%20Ringerike!5e0!3m2!1sno!2sno!4v1677628093784!5m2!1sno!2sno" width="600" height="450" style="border: 2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <footer>
@@ -137,7 +135,6 @@
                     <li><a href="">KundeKlubb</a></li>
                     <li><a href="">Medlemsfordeler</a></li>
                     <li><a href="">Nyhetsbrev</a></li>
-                    <li><a href="">Bærekraft</a></li>
                     <li><a href="">Ledige stillinger</a></li>
                 </ul>
             </div>
