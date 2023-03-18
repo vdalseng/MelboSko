@@ -40,22 +40,13 @@ nav {
     background-color: aquamarine;
     overflow: hidden;
     position: sticky;
+    min-height: 70px;
     top: 0;
-}
-
-.nav-innhold {
-    max-width: 800px;
-    margin: auto;
-    align-items: center;
-}
-
-nav ul {
-    margin-top: auto;
 }
 
 nav ul li {
     display: inline-block;
-    margin-left: 30px;
+    margin: 0 10px 0 10px;
     list-style-type: none;
 }
 
@@ -67,23 +58,22 @@ nav ul li a {
 }
 
 .logo {
-    float: left;
+    position: absolute;
+    top: 11px;
+    left: 20px;
     width: 10%;
+    max-width: 160px;
+    min-width: 60px;
     height: auto;
-    margin-left: 20px;
-    text-align: center;
-    overflow: hidden;
 }
 
-.log-like-handlekurv {
+.login-onskeliste-handlekurv {
     float: right;
-    vertical-align: top;
-    padding: 10px 20px 10px;
 }
 
-.log-like-handlekurv-ikon {
-    height: 40px;
-    margin: -5px;
+.login-onskeliste-handlekurv-ikon {
+    height: 45px;
+    padding: 5px;
 
     /* Gjør at elementene får en sømløs overgang når skjermstørrelsen endres */
     transition-property: all;
@@ -91,23 +81,33 @@ nav ul li a {
     transition-timing-function: ease-in-out;
 }
 
-.log-like-handlekurv-ikon:hover {
+.login-onskeliste-handlekurv-ikon:hover {
     background-color: azure;
     border-radius: 10px;
+}
+
+.top-nav {
+    padding: 15px 20px 20px 20px;
 }
 
 .bottom-nav {
     width: 100%;
     overflow: hidden;
+    padding: 10px 0 10px 0;
     /* border-top: #3e3e3e 2px solid;
     border-bottom: #3e3e3e 2px solid; */
     text-align: center;
-    font-size: 25px;
     font-family: 'Raleway', sans-serif;
 }
 
 .bottom-nav li {
-    padding: 0 15px 0 15px;
+    padding: 0 3% 0 3%;
+    margin: auto;
+}
+
+.bottom-nav li a{
+    font-size: 38px;
+    padding: 2px 5px 2px 5px;
 }
 
 /* Runde knapper for navbar elementene*/
@@ -137,7 +137,7 @@ nav ul li a {
   
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 5%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -158,21 +158,21 @@ nav ul li a {
   
   .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: -15px;
+    right: 18px;
     font-size: 60px;
   }
 
   span {
-    font-size: 40px;
+    font-size: 45px;
     cursor: pointer;
   }
 
   .burger-btn {
     display: none;
-    float: right;
-    text-align: center;
-    margin: 10px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
   }
 
   @media screen and (max-height: 450px) {
@@ -191,10 +191,11 @@ nav ul li a {
         /* Kode for søkefelt */
 /* ------------------------------------- */
 .searchbar {
-    margin: 10px auto;
-    padding: 0.5rem;
+    margin: auto;
+    padding: 7px;
     justify-content: space-between;
-    width: 275px;
+    width: 30%;
+    max-width: 450px;
     background-color: aquamarine;
     /* border-radius: 0.5rem; */
     color: black;
@@ -203,11 +204,11 @@ nav ul li a {
 }
 
 .searchbar * {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 input[type=text]{
-    width: 240px;
+    width: 80%;
     border: none;
     outline: none;
     background-color: aquamarine;
@@ -237,7 +238,7 @@ footer {
 /* "Div" som alle elementene i footer befinner seg inni */
 .footer-elements {
     margin: auto;
-    max-width: 800px;
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -249,18 +250,19 @@ footer {
 
 footer ul li {
     list-style-type: none;
-    margin-top: 5px;
+    padding: 3px;
 }
 
 footer h3, footer ul li a{
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     color: black;
+    padding: 10px;
 }
 
 footer ul li a:hover {
     text-decoration: none;
-    color: red;
+    color: azure;
 }
 
 /* ------------------------------------------ */
@@ -270,24 +272,24 @@ footer ul li a:hover {
 .tilbud {
     margin: auto;
     width: 100%;
-    max-width: 750px;
+    max-width: 1500px;
     overflow: hidden;
     color: darkblue;
     font-family: 'Raleway', sans-serif;
 }
 
 .forside-overskrift {
-    padding-top: 10px;
     text-align: center;
+    font-size: 40px;
     color: darkblue;
 }
 
 .nyheter {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 0px 10px 0px;
+    max-width: 1000px;
+    margin: auto;
     text-align: center;
+    padding: 20px 0 20px 0;
 }
 
 .nyhetsbilde {
@@ -297,10 +299,14 @@ footer ul li a:hover {
 
 .img-info {
     margin: auto;
-    padding: 20px 30px 20px;
-    font-size: 16px;
-    line-height: 24px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 600;
+}
+
+.img-info p{
+    padding: 10px 0 10px 0;
 }
 
 /* Styling the area of the slides */
@@ -382,16 +388,14 @@ for the slideshow */
 
 .kidgroup-shoes {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 20px auto 20px auto;
     width: 80%;
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 .omoss {
     margin: auto;
-    max-width: 800px;
+    max-width: 1500px;
     color: darkblue;
 }
 
@@ -407,10 +411,6 @@ for the slideshow */
     padding: 10px;
 }
 
-.kontaktOss h2, .kontaktOss p {
-    margin: 5px;
-}
-
 .kontaktOss a {
     word-wrap: break-word;
 }
@@ -421,7 +421,6 @@ for the slideshow */
     max-height: 600px; 
     margin: 30px auto;
     text-align: center;
-    border: 2px solid black;
 }
 
 .kart iframe {
@@ -483,7 +482,6 @@ for the slideshow */
     }
 
     .logo {
-        margin: 20px;
         width: 60px;
     }
 
@@ -492,7 +490,7 @@ for the slideshow */
     }
 
     /* Endringer gjort mot søkefeltet */
-    .searchbar {
+    /* .searchbar {
         padding-top: 10px;
         padding-right: 10px;
         float: right;
@@ -511,9 +509,9 @@ for the slideshow */
         width: 40px;
         padding: 10px;
         margin: -3px;
-    }
+    } */
 
-    .log-like-handlekurv {
+    .login-onskeliste-handlekurv {
         display: none;
     }
 
