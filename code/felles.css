@@ -431,10 +431,10 @@ for the slideshow */
 /*----------------------------------------------------------------*/
 /*-----------------------css for blogg siden-----------------------*/
 /*----------------------------------------------------------------*/
-.rtl {
+.innhold-bloggside {
     margin: auto;
     width: 100%;
-    max-width: 800px;
+    max-width: 1540px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -459,9 +459,7 @@ for the slideshow */
     list-style-type: none;
 }
 
-.midl-bilder {
-    width: 300px;
-}
+
 
 .logo-linker-bildet {
     width: 100px;
@@ -469,6 +467,43 @@ for the slideshow */
 .logo-linker {
     padding-top: 20px;
 }
+.Sosiale-Medier {
+    width: 40%;
+}
+   
+  /* Header/Blog Title */
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .row {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 90%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: Blue;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .innhold-bloggside:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+
 
 /* ----------------------------------------------------------------------------------- */
 /* -----------------Justering av elementene baser på skjermstørrelse------------------ */
