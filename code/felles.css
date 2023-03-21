@@ -389,8 +389,10 @@ for the slideshow */
 .kidgroup-shoes {
     display: block;
     margin: 20px auto 20px auto;
-    width: 80%;
-    max-width: 1000px;
+    width: 85%;
+    max-width: 1500px;
+    max-height: 300px;
+    zoom: normal;
 }
 
 .omoss {
