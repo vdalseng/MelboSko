@@ -274,14 +274,14 @@ footer ul li a:hover {
     width: 100%;
     max-width: 1500px;
     overflow: hidden;
-    color: darkblue;
+    color: black;
     font-family: 'Raleway', sans-serif;
 }
 
 .forside-overskrift {
     text-align: center;
     font-size: 40px;
-    color: darkblue;
+    color: black;
 }
 
 .nyheter {
