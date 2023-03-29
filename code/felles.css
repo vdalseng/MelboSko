@@ -234,6 +234,10 @@ input[type=text]{
     border: none;
 }
 
+.fa {
+    background-color: lightsteelblue;
+}
+
 /* ------------------------------------- */
                 /*footer*/
 /* ------------------------------------- */
@@ -241,7 +245,7 @@ input[type=text]{
 footer {
     background-color: rgb(220,230,245);
     overflow: hidden;
-    padding: 15px 0 15px 0;
+    padding: 15px 0;
     /* position: sticky;
     bottom: 0; */
 }
@@ -395,6 +399,102 @@ for the slideshow */
     80% {
     margin-left: calc(-100% * 3);
     }
+}
+
+/* ----------------------------------------- */
+/* ---------------Produktside--------------- */
+/* ----------------------------------------- */
+.filter-knapp {
+    display: none;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 4px 4px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 100px;
+
+}
+
+.filter-column {
+    width: 150px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    position: sticky;
+    text-align: center;
+    top: 20%;
+    z-index: 1;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.filter-column h3{
+    text-decoration: underline;
+}
+
+.filter-season {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+input{
+    margin: 3px;
+}
+
+.filter-sex {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.filter-size {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.filter input{
+    margin: 8px;
+}
+
+.filter-list {
+    margin-right: 25%;
+    text-align: right;
+}
+
+.filter-str {
+    margin-right: 25%;
+    text-align: right;
+}
+
+.img-gallery {
+    float: left;
+    width: auto;
+}
+
+.produkt {
+    float: left;
+    text-align: center;
+}
+
+.produkt p {
+    text-align: center;
+}
+
+.produkt-bilde {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
 }
 
 /* ------------------------------------------ */
@@ -641,6 +741,50 @@ for the slideshow */
     .searchbar {
         display: none;
     }
+
+    /* Kode for mobilfiltersystem */
+    /* .filter-column {
+        width: 200px;
+        background-color: lightsteelblue;
+        border-radius: 5px;
+        position: sticky;
+        text-align: center;
+        top: 20%;
+        z-index: 1;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    
+    .filter-column h3{
+        text-decoration: underline;
+    }
+    
+    .filter-season {
+        margin: 5px;
+    }
+    
+    .filter-sex {
+        margin: 5px;
+    }
+    
+    .filter-size {
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 25% 45% max-content;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+    
+    input {
+        position: relative;
+        vertical-align: middle;
+    }
+    
+    label {  
+        display: inline-block;
+        vertical-align: middle;
+    } */
+
 }
 
 @media only screen and (max-width: 700px) {
