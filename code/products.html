@@ -41,7 +41,7 @@
                 <div class="searchbar">
                     <form action="#">
                         <input type="text" placeholder="Søk..." name="search">
-                        <div class="fa fa-search" style="float:right;"></div>
+                        <button class="fa fa-search" style="float:right;"></button>
                     </form>
                 </div>
                 <div id="myNav" class="overlay">
@@ -71,6 +71,123 @@
         </div>
     </nav>
 
+    <!-- Filter for desktop -->
+    <div class="filter-column">
+        <h3>Sesong</h3>
+        <div class="filter-season">
+            <label class="filter-list">Vår<input type="checkbox" value=""></label>
+            <label class="filter-list">Sommer<input type="checkbox" value=""></label>
+            <label class="filter-list">Høst<input type="checkbox" value=""></label>
+            <label class="filter-list">Vinter<input type="checkbox" value=""></label>
+        </div>
+        <h3>Kjønn</h3>
+        <div class="filter-sex">
+            <label class="filter-list">Unisex<input type="checkbox" value=""></label>
+            <label class="filter-list">Damer<input type="checkbox" value=""></label>
+            <label class="filter-list">Herrer<input type="checkbox" value=""></label>
+        </div>
+        <h3>Størrelse</h3>
+        <div class="filter-size">
+            <label class="filter-str">36<input type="checkbox" value=""></label>
+            <label class="filter-str">37<input type="checkbox" value=""></label>
+            <label class="filter-str">38<input type="checkbox" value=""></label>
+            <label class="filter-str">39<input type="checkbox" value=""></label>
+            <label class="filter-str">40<input type="checkbox" value=""></label>
+            <label class="filter-str">41<input type="checkbox" value=""></label>
+            <label class="filter-str">42<input type="checkbox" value=""></label>
+            <label class="filter-str">43<input type="checkbox" value=""></label>
+            <label class="filter-str">44<input type="checkbox" value=""></label>
+            <label class="filter-str">45<input type="checkbox" value=""></label>
+            <label class="filter-str">46<input type="checkbox" value=""></label>
+            <label class="filter-str">47<input type="checkbox" value=""></label>
+        </div>
+    </div>
+
+    <!-- Filterknapp - erstatter desktop filtersystemet når skjermen er mindre enn 800px -->
+    <button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <!-- Filter for mobil - dukker opp etter filter knappen er trykket-->
+            <div class="filter-knapp">
+                <div class="filter-column">
+                    <h3>Sesong</h3>
+                    <div class="filter-season">
+                        <label class="filter-list">Vår<input type="checkbox" value=""></label>
+                        <label class="filter-list">Sommer<input type="checkbox" value=""></label>
+                        <label class="filter-list">Høst<input type="checkbox" value=""></label>
+                        <label class="filter-list">Vinter<input type="checkbox" value=""></label>
+                    </div>
+                    <h3>Kjønn</h3>
+                    <div class="filter-sex">
+                        <label class="filter-list">Unisex<input type="checkbox" value=""></label>
+                        <label class="filter-list">Damer<input type="checkbox" value=""></label>
+                        <label class="filter-list">Herrer<input type="checkbox" value=""></label>
+                    </div>
+                    <h3>Størrelse</h3>
+                    <div class="filter-size">
+                        <label class="filter-str">36<input type="checkbox" value=""></label>
+                        <label class="filter-str">37<input type="checkbox" value=""></label>
+                        <label class="filter-str">38<input type="checkbox" value=""></label>
+                        <label class="filter-str">39<input type="checkbox" value=""></label>
+                        <label class="filter-str">40<input type="checkbox" value=""></label>
+                        <label class="filter-str">41<input type="checkbox" value=""></label>
+                        <label class="filter-str">42<input type="checkbox" value=""></label>
+                        <label class="filter-str">43<input type="checkbox" value=""></label>
+                        <label class="filter-str">44<input type="checkbox" value=""></label>
+                        <label class="filter-str">45<input type="checkbox" value=""></label>
+                        <label class="filter-str">46<input type="checkbox" value=""></label>
+                        <label class="filter-str">47<input type="checkbox" value=""></label>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <!-- Produktkatalog -->
+    <div class="img-gallery">
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 1</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 2</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 3</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 4</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 5</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 6</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 7</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 8</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 9</p>
+        </div>
+        <div class="produkt">
+            <a href="#"><img class="produkt-bilde" src="Pictures/emerica-low-vulc.jpg" alt="Emerica"></a>
+            <p>Sko 10</p>
+        </div>
+    </div>
     
     <footer>
         <div class="footer-elements">
