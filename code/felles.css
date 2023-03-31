@@ -576,8 +576,7 @@ input{
 .innhold-bloggside {
     margin: auto;
     width: 100%;
-    max-width: 1540px;
-    text-align: center;
+    max-width: 1540px;   
     align-items: center;
     justify-content: center;
 }
@@ -599,6 +598,7 @@ input{
 
 .sosialemedier {
     list-style-type: none;
+    text-align: center;
 }
 
 
@@ -619,7 +619,7 @@ input{
   /* Left column */
   .row {
     float: left;
-    width: 50%;
+    width: 600px;
   }
   
   /* Fake image */
@@ -627,20 +627,35 @@ input{
     background-color: #aaa;
     width: 90%;
     padding: 20px;
+    margin: 10px;
   }
   
   /* Add a card effect for articles */
   .card {
-    background-color: Blue;
+    background-color: lightgray;
     padding: 20px;
-    margin-top: 20px;
+    margin: 50px;
   }
+  .card h5 {
+    text-align: center;
+  }
+  .card h2 {
+    text-align: center;
+  }
+  
   
   /* Clear floats after the columns */
   .innhold-bloggside:after {
     content: "";
     display: table;
     clear: both;
+  }
+  /* Mobil greie for bloggsiden*/
+  @media only screen and (max-width: 800px) {
+    .row {
+        float: none;
+        margin: auto;
+    }
   }
 
 
