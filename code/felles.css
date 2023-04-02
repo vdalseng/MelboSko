@@ -404,34 +404,36 @@ for the slideshow */
 /* ----------------------------------------- */
 /* ---------------Produktside--------------- */
 /* ----------------------------------------- */
-.filter-knapp {
+.filter-knapp, .open-button, .btn {
     display: none;
 }
 
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 4px 4px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    width: 100px;
-
-}
-
-.filter-column {
+.filter-column-desktop {
     width: 150px;
     background-color: lightsteelblue;
     border-radius: 5px;
     position: sticky;
     text-align: center;
-    top: 20%;
+    top: 25%;
     z-index: 1;
     margin-left: 10px;
     padding: 5px;
 }
 
-.filter-column h3{
+.filter-column-mobile {
+    display: none;
+    width: 150px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    position: sticky;
+    text-align: center;
+    top: 25%;
+    z-index: 1;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.filter-column-desktop h3{
     text-decoration: underline;
 }
 
@@ -600,8 +602,6 @@ input{
     list-style-type: none;
     text-align: center;
 }
-
-
 
 .logo-linker-bildet {
     width: 100px;
@@ -800,6 +800,39 @@ input{
         vertical-align: middle;
     } */
 
+    .filter-column-desktop {
+        display: none;
+    }
+
+    .open-button {
+        display: block;
+        width: 20%;
+        max-width: 90px;
+        padding: 4px 4px;
+        margin: 10px auto 10px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        background-color: lightsteelblue;
+        color: black;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    .btn {
+        display: block;
+        width: 20%;
+        max-width: 90px;
+        padding: 4px 4px;
+        margin: 10px auto 10px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        background-color: lightsteelblue;
+        color: black;
+        cursor: pointer;
+        opacity: 0.8;
+    }
 }
 
 @media only screen and (max-width: 700px) {
