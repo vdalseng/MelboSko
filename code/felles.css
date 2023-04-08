@@ -422,19 +422,26 @@ for the slideshow */
 
 .filter-column-mobile {
     display: none;
-    width: 150px;
+    width: 90%;
+    max-width: 320px;
     background-color: lightsteelblue;
     border-radius: 5px;
     position: sticky;
     text-align: center;
-    top: 25%;
+    top: 5%;
     z-index: 1;
-    margin-left: 10px;
     padding: 5px;
+    margin: auto;
 }
 
-.filter-column-desktop h3{
+.filter-column-desktop h3 {
     text-decoration: underline;
+}
+
+/* Mobile filtersystem */
+.filter-column-mobile h3 {
+    text-decoration: underline;
+    margin: 10px 0;
 }
 
 .filter-season {
@@ -457,6 +464,11 @@ input{
     column-gap: 5px;
 }
 
+.filter-list {
+    margin-right: 25%;
+    text-align: right;
+}
+
 .filter-size {
     margin: 10px auto;
     display: grid;
@@ -465,18 +477,13 @@ input{
     column-gap: 5px;
 }
 
-.filter input{
-    margin: 8px;
-}
-
-.filter-list {
-    margin-right: 25%;
-    text-align: right;
-}
-
 .filter-str {
     margin-right: 25%;
     text-align: right;
+}
+
+.filter input{
+    margin: 8px;
 }
 
 .img-gallery {
@@ -758,47 +765,33 @@ input{
     }
 
     /* Kode for mobilfiltersystem */
-    /* .filter-column {
-        width: 200px;
-        background-color: lightsteelblue;
-        border-radius: 5px;
-        position: sticky;
-        text-align: center;
-        top: 20%;
-        z-index: 1;
-        margin-left: 10px;
-        padding: 10px;
-    }
-    
-    .filter-column h3{
-        text-decoration: underline;
-    }
-    
     .filter-season {
-        margin: 5px;
+        display: inline;
+    }
+    
+    input{
+        margin: 3px;
     }
     
     .filter-sex {
-        margin: 5px;
+        display: inline;
+    }
+    
+    .filter-list {
+        margin-right: 0;
+        text-align: none;
     }
     
     .filter-size {
-        margin: 5px;
-        display: grid;
-        grid-template-columns: 25% 45% max-content;
-        row-gap: 5px;
-        column-gap: 5px;
+        max-width: 260px;
+        margin: 10px auto;
+        display: block;
     }
     
-    input {
-        position: relative;
-        vertical-align: middle;
+    .filter-str {
+        margin-right: 0;
+        text-align: none;
     }
-    
-    label {  
-        display: inline-block;
-        vertical-align: middle;
-    } */
 
     .filter-column-desktop {
         display: none;
@@ -806,8 +799,7 @@ input{
 
     .open-button {
         display: block;
-        width: 20%;
-        max-width: 90px;
+        width: 90px;
         padding: 4px 4px;
         margin: 10px auto 10px;
         border: none;
