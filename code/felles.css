@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
 
 /* CSS kode for skelette til nettsiden */
-
 * {
     margin: 0;
     padding: 0;
@@ -242,12 +241,17 @@ input[type=text]{
                 /*footer*/
 /* ------------------------------------- */
 
+/* Selve elementene som inneholder linkene i footer */
 footer {
     background-color: rgb(220,230,245);
     overflow: hidden;
     padding: 15px 0;
-    /* position: sticky;
-    bottom: 0; */
+    width: 100%;
+    margin-top: auto;
+    /* position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0; */
 }
 
 /* "Div" som alle elementene i footer befinner seg inni */
@@ -255,11 +259,6 @@ footer {
     margin: auto;
     max-width: 1000px;
     text-align: center;
-}
-
-/* Selve elementene som inneholder linkene i footer */
-footer{
-    width: 100%;
 }
 
 #Kundeservice, #Kjøpsinformasjon, #Melbosko {
@@ -409,15 +408,17 @@ for the slideshow */
 }
 
 .filter-column-desktop {
-    width: 150px;
+    width: 250px;
     background-color: lightsteelblue;
     border-radius: 5px;
     position: sticky;
     text-align: center;
-    top: 25%;
+    top: 30%;
     z-index: 1;
-    margin-left: 10px;
+    margin: auto auto auto 10px;
     padding: 5px;
+    float: left;
+    font-size: 30px;
 }
 
 .filter-column-mobile {
@@ -487,13 +488,23 @@ input{
 }
 
 .img-gallery {
-    float: left;
-    width: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    grid-template-rows: auto 1fr auto / auto 1fr auto;
+    align-items: center;
+    margin: 40px auto 20px 20px;
+    z-index: 1;
 }
 
 .produkt {
-    float: left;
+    flex: 0 1 300px;
+    height: auto;
+    width: auto;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .produkt p {
@@ -501,8 +512,8 @@ input{
 }
 
 .produkt-bilde {
-    width: 20%;
-    height: 20%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -657,8 +668,9 @@ input{
     display: table;
     clear: both;
   }
-  /* Mobil greie for bloggsiden*/
+
   @media only screen and (max-width: 1000px) {
+    /* Mobil greie for bloggsiden*/
     .row {
         float: none;
         margin: auto;
@@ -700,6 +712,21 @@ input{
     .img-info p{
         padding: 20px 0 0 0;
     }
+
+    .produkt {
+        flex: 0 1 500px;
+    }
+}
+
+@media only screen and (max-width: 1540px) {
+    .produkt {
+        flex: 0 1 400px;
+    }
+
+    .produkt-bilde {
+        width: 70%;
+        height: 70%;
+    }
 }
 
 @media only screen and (max-width: 1110px) {
@@ -714,6 +741,18 @@ input{
         justify-content: center;
         margin: auto;
         width: 90%;
+    }
+
+    .filter-column-desktop {
+        width: 200px;
+        top: 30%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .produkt {
+        flex: 0 1 300px;
     }
 }
 
@@ -847,5 +886,10 @@ input{
     .searchbar button {
         padding: 8px;
         margin: -3px;
+    }
+
+    .produkt-bilde {
+        width: 70%;
+        height: 70%;
     }
 }
