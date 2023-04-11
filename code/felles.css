@@ -223,7 +223,7 @@ nav ul li a {
     font-size: 1.8rem;
 }
 
-input[type=text]{
+nav input[type=text]{
     width: 80%;
     border: none;
     outline: none;
@@ -241,6 +241,23 @@ input[type=text]{
 
 .fa {
     background-color: lightsteelblue;
+}
+
+/*----------------------------------------------------------------*/
+/*-----------------------Innloggingsside-----------------------*/
+/*----------------------------------------------------------------*/
+.innlogging-overskrift {
+    margin: 20px auto;
+}
+
+.innlogging {
+    width: 100%;
+    margin: 15px 10px 15px auto;
+    padding: 5px;
+    border: none;
+    outline: none;
+    align-items: center;
+    min-height: 80vh;
 }
 
 /* ------------------------------------- */
@@ -736,7 +753,6 @@ input{
 }
 .blogg-innhold {
     text-align: center;
-    margin: auto;
 }
 
 .innlegg-linker {
@@ -763,7 +779,7 @@ input{
 }
 .Sosiale-Medier {
     max-width: 1000px;
-    width: 50%;
+    width: 100%;
 }
    
   /* Header/Blog Title */
