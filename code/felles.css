@@ -771,14 +771,15 @@ input{
   /* Left column */
   .row {
     float: left;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
   }
   
   /* Fake image */
   .fakeimg {
     background-color: #aaa;
     width: 90%;
-    padding: 20px;
+    padding: 5px;
     margin: 10px;
   }
   
