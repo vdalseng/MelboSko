@@ -11,14 +11,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Merkelig kode */
-/* .lerret {
-    max-width: 2160px;
-    min-height: 100vh;
-    margin: auto;
-    justify-content: center;
-} */
-
 .cc-message {
     display: block;
     -webkit-box-flex: 1;
@@ -271,10 +263,6 @@ footer {
     padding: 15px 0;
     width: 100%;
     margin-top: auto;
-    /* position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0; */
 }
 
 /* "Div" som alle elementene i footer befinner seg inni */
@@ -324,7 +312,7 @@ footer ul li a:hover {
     overflow: hidden;
     color: black;
     font-family: 'Raleway', sans-serif;
-    min-height: 100vh;
+    min-height: 81vh;  
 }
 
 .overskrift {
@@ -337,14 +325,14 @@ footer ul li a:hover {
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
 }
 
 .nyhetsbilde {
     width: 100%;
-    max-height: 350px;
+    max-height: 300px;
     object-fit: cover;
-    padding: 20px auto 20px;
+    padding: 20px auto;
 }
 
 .img-info {
@@ -435,17 +423,27 @@ for the slideshow */
 /* ----------------------------------------- */
 /* ---------------Produktside--------------- */
 /* ----------------------------------------- */
+
+.content {
+    margin: auto;
+    width: 90%;
+    max-width: 2160px;
+    font-family: 'Raleway', sans-serif;
+    min-height: 81vh; 
+    justify-content: center;
+}
+
 .filter-knapp, .open-button, .btn {
     display: none;
 }
 
 .filter-column-desktop {
-    width: 17rem;
+    width: 14rem;
     background-color: lightsteelblue;
     border-radius: 5px;
     position: sticky;
     text-align: center;
-    top: 12rem;
+    top: 35%;
     z-index: 1;
     margin: auto auto auto auto;
     padding: 5px;
@@ -661,13 +659,6 @@ input{
 /* ------------------------------------------ */
 /* --------------Om Oss/Kontakt-------------- */
 /* ------------------------------------------ */
-.omoss-innhold {
-    width: 100%;
-    max-width: 2160px;
-    min-height: 100vh;
-    justify-content: center;
-    margin: auto;
-}
 
 .row-omoss {
     width: 90%;
@@ -745,11 +736,11 @@ input{
 /*----------------------------------------------------------------*/
 .innhold-bloggside {
     margin: auto;
-    width: 100%;
-    max-width: 1540px;   
-    align-items: center;
+    max-width: 1540px;
+    min-height: 81vh;  
     justify-content: center;
 }
+
 .blogg-innhold {
     text-align: center;
 }
@@ -818,15 +809,6 @@ input{
     display: table;
     clear: both;
   }
-
-  @media only screen and (max-width: 1000px) {
-    /* Mobil greie for bloggsiden*/
-    .row {
-        float: none;
-        margin: auto;
-    }
-  }
-
 
 /* ----------------------------------------------------------------------------------- */
 /* -----------------Justering av elementene baser på skjermstørrelse------------------ */
@@ -898,9 +880,19 @@ input{
     }
 
     .filter-column-desktop {
-        width: 200px;
-        top: 30%;
+        width: 180px;
+        top: 35%;
         font-size: 1.5rem;
+    }
+}
+
+/* Hvis skjermen er mindre enn 1200px og dermed ikke får plass til filteret, vil filteret
+    bli stasjonert ved toppen av produktkatalogen sånn at den er lettere å få tak i på
+    mindre enheter som f.eks. telefoner som ligger sidelengs eller små nettbrett. */
+@media only screen and (max-height: 1200px) {
+    .filter-column-desktop {
+        top: 35%;
+        position: relative;
     }
 }
 
@@ -908,6 +900,11 @@ input{
     .innlegg-linker iframe {
         width: 80%;
         height: 50vh;
+    }
+
+    .row {
+        float: none;
+        margin: auto;
     }
 }
 
@@ -1019,13 +1016,6 @@ input{
     }
 }
 
-@media only screen and (max-width: 620px) {
-    .open-button {
-        width: 135px;
-        font-size: 1.5rem;
-    }
-}
-
 @media only screen and (max-width: 350px) {
 
     input[type=text]{
@@ -1036,6 +1026,11 @@ input{
     .searchbar button {
         padding: 8px;
         margin: -3px;
+    }
+
+    .open-button {
+        width: 135px;
+        font-size: 1.5rem;
     }
 
     .produkt-bilde {
