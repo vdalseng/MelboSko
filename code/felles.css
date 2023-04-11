@@ -744,6 +744,12 @@ input{
     list-style-type: none;
 }
 
+.innlegg-linker iframe {
+    width: 40%;
+    height: 50vh;
+    overflow: auto;
+}
+
 .sosialemedier {
     list-style-type: none;
     text-align: center;
@@ -878,6 +884,13 @@ input{
         width: 200px;
         top: 30%;
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .innlegg-linker iframe {
+        width: 80%;
+        height: 50vh;
     }
 }
 
