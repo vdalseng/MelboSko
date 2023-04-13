@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
 
-/* CSS kode for skelette til nettsiden */
+/* CSS kode for skjelette til nettsiden */
 * {
     margin: 0;
     padding: 0;
@@ -526,7 +526,7 @@ input{
     flex-direction: row;
     align-items: center;
     margin: 40px auto 20px 20px;
-    z-index: 1;
+    z-index: 0;
     font-size: 2rem;
 }
 
@@ -893,6 +893,11 @@ input{
     .filter-column-desktop {
         top: 35%;
         position: relative;
+    }
+
+    .column-right {
+        position: relative;
+        top: 20%;
     }
 }
 
