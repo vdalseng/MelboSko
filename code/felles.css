@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200);
 
 /* CSS kode for skjelette til nettsiden */
+html {
+    height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -249,7 +253,7 @@ nav input[type=text]{
     border: none;
     outline: none;
     align-items: center;
-    min-height: 80vh;
+    min-height: calc(100vh - 550px);
 }
 
 /* ------------------------------------- */
@@ -305,14 +309,14 @@ footer ul li a:hover {
 /* -----------------Forside------------------ */
 /* ------------------------------------------ */
 
-.tilbud {
+.innhold-forside {
     margin: auto;
     width: 90%;
     max-width: 2160px;
     overflow: hidden;
     color: black;
     font-family: 'Raleway', sans-serif;
-    min-height: 81vh;  
+    min-height: calc(100vh - 460px);
 }
 
 .overskrift {
@@ -339,7 +343,7 @@ footer ul li a:hover {
     margin: auto;
     padding: 20px;
     font-size: 1.5rem;
-    line-height: 30px;
+    line-height: 45px;
     font-weight: 600;
 }
 
@@ -429,7 +433,7 @@ for the slideshow */
     width: 90%;
     max-width: 2160px;
     font-family: 'Raleway', sans-serif;
-    min-height: 81vh; 
+    min-height: calc(100vh - 480px);
     justify-content: center;
 }
 
@@ -737,7 +741,7 @@ input{
 .innhold-bloggside {
     margin: auto;
     max-width: 1540px;
-    min-height: 81vh;  
+    min-height: calc(100vh - 460px);
     justify-content: center;
 }
 
@@ -795,10 +799,15 @@ input{
     background-color: lightgray;
     padding: 20px;
     margin: 50px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: 600;
   }
+
   .card h5 {
     text-align: center;
   }
+
   .card h2 {
     text-align: center;
   }
@@ -809,6 +818,45 @@ input{
     display: table;
     clear: both;
   }
+
+/* ----------------------------------------------------------------------------------- /
+/ -----------------Personvernerklæring------------------ /
+/ ----------------------------------------------------------------------------------- */
+.innhold-personvernerklering {
+    line-height: 1.5;
+    box-sizing: border-box;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
+    justify-content: center;
+    padding: 0 1.5rem 0 1.5rem;
+    word-wrap: break-word;
+    min-height: calc(100vh - 600px);
+}
+
+.innhold-personvernerklering p {
+    padding: 10px 0 0 0;
+    font-weight: 550;
+    font-size: 1.3rem;
+}
+
+.personvern-overskrift {
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.personvern-cookies {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
 
 /* ----------------------------------------------------------------------------------- */
 /* -----------------Justering av elementene baser på skjermstørrelse------------------ */
