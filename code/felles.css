@@ -443,7 +443,7 @@ for the slideshow */
     border-radius: 5px;
     position: sticky;
     text-align: center;
-    top: 35%;
+    top: 30%;
     z-index: 1;
     margin: auto auto auto auto;
     padding: 5px;
@@ -891,7 +891,7 @@ input{
     mindre enheter som f.eks. telefoner som ligger sidelengs eller små nettbrett. */
 @media only screen and (max-height: 1200px) {
     .filter-column-desktop {
-        top: 35%;
+        top: 42px;
         position: relative;
     }
 
