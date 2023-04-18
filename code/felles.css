@@ -372,6 +372,8 @@ footer ul li a:hover {
 /* Specify the animation with the
     duration and speed */
     animation: slide 20s ease infinite;
+
+    pointer-events: none;
 }
 .slide-wrapper:hover {
     animation-play-state: paused;
@@ -385,6 +387,11 @@ with a fixed width and height */
     height: auto;
     text-align: center;
     margin: 20px auto;
+
+    pointer-events: none;
+}
+.slide img{
+    pointer-events: auto;
 }
 
 .slide-number {
