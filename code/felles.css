@@ -326,10 +326,16 @@ footer ul li a:hover {
 }
 
 .nyheter {
+    background-color: pink;
     width: 100%;
-    margin: auto;
+    margin: 10px;
     text-align: center;
     padding: 20px 0;
+}
+
+.banner-text {
+    font-size: 150px;
+    color: azure;
 }
 
 .nyhetsbilde {
@@ -365,7 +371,10 @@ footer ul li a:hover {
 
 /* Specify the animation with the
     duration and speed */
-    animation: slide 10s ease infinite;
+    animation: slide 20s ease infinite;
+}
+.slide-wrapper:hover {
+    animation-play-state: paused;
 }
 
 /* Style each of the sides
@@ -1066,6 +1075,10 @@ input{
         width: 100%;
         margin-bottom: 15px;
         padding-bottom: 20px;
+    }
+
+    .banner-text {
+        font-size: 100px;
     }
 }
 
