@@ -3,6 +3,9 @@
 <head>
     <title>Melbo Sko Innlogging</title>
     <link rel="stylesheet" type="text/css" href="felles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
   <body>
     <header>
@@ -69,27 +72,37 @@
             </div>
         </div>
     </nav>
+
     <!-- Innloggingsside -->
-    <div class="innlogging-overskrift">
-        <h1>Innlogging</h1>
-        <div class="innlogging">
-            <style>
-                h1 {text-align: center;}
-                div {text-align: center;}
-            </style>   
-            <form action="submit.php" method="post">
-                <label for="username">Brukernavn:</label>
-                <input type="text" id="username" name="username" placeholder="Telefonnr/E-post"><br><br>
-                <label for="password">Passord:</label>
-                <input type="password" id="password" name="password" placeholder="Passord"><br><br>
-                <input type="submit" value="Logg inn">
-                <input type="submit" value="Er du ikke kunde? Registrer deg">
+
+    <h1 class="Innlogging">Innlogging</h1>
+    <form class="loginForm" action="">
+        <div class="headingsContainer"></div>
+
+        <div class="mainContainer">
+            <div class="Brukernavn">
+            <label for="Brukernavn">Ditt brukernavn</label>
+            <br>
+            <input type="text" placeholder="E-post/Telefonnr" name="Brukernavn" required>
+            </div>
+            <br>
+                <label for="Passord">Passord</label>
                 <br>
-                <br>
-                <a href="">Glemt passord?</a>
-            </form>
+                <input type="password" placeholder="Passord" name="Passord" required>
+            
+            <div class="subContainer">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Husk meg
+                </label>
+                <p class="Glemt-passord"> <a href="#">Glemt passord?</a></p>
+                <button type="submit">Logg inn</button>
+            </div>
+
+
+            <p class="Registrering">Er du ikke medlem? <a href="#">Registrer deg her!</a></p>
         </div>
-    </div>
+    </form>
+
     <footer>
         <div class="footer-elements">
             <div id="Kundeservice">
