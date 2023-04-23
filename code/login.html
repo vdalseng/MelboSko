@@ -41,7 +41,7 @@
                 <div class="searchbar">
                     <form action="#">
                         <input type="text" placeholder="Søk..." name="search">
-                        <div class="fa fa-search" style="float:right;"></div>
+                        <button class="fa fa-search" style="float:right;"></button>
                     </form>
                 </div>
                 <div id="myNav" class="overlay">
@@ -74,32 +74,24 @@
     </nav>
 
     <!-- Innloggingsside -->
-
-    <h1 class="Innlogging">Innlogging</h1>
     <form class="loginForm" action="">
-        <div class="headingsContainer"></div>
+        <h1 class="overskrift">Innlogging</h1>
+        <div class="headingsContainer">
+            <div class="mainContainer">
+                <div class="innlogging">
+                    <input type="text" placeholder="E-post/Telefonnr" name="Brukernavn" required>
+                    <input type="password" placeholder="Passord" name="Passord" required>
+                </div>
 
-        <div class="mainContainer">
-            <div class="Brukernavn">
-            <label for="Brukernavn">Ditt brukernavn</label>
-            <br>
-            <input type="text" placeholder="E-post/Telefonnr" name="Brukernavn" required>
+                <div class="subContainer">
+                    <label><input class="checkmark" type="checkbox" checked="checked" name="remember">Husk meg</label>
+                    <p class="Glemt-passord"><a href="#">Glemt passord?</a></p>
+                    <button type="submit">Logg inn</button>
+                </div>
+
+                <p class="Registrering">Er du ikke medlem?</p>
+                <a href="#">Registrer deg her!</a>
             </div>
-            <br>
-                <label for="Passord">Passord</label>
-                <br>
-                <input type="password" placeholder="Passord" name="Passord" required>
-            
-            <div class="subContainer">
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Husk meg
-                </label>
-                <p class="Glemt-passord"> <a href="#">Glemt passord?</a></p>
-                <button type="submit">Logg inn</button>
-            </div>
-
-
-            <p class="Registrering">Er du ikke medlem? <a href="#">Registrer deg her!</a></p>
         </div>
     </form>
 
