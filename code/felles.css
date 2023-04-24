@@ -401,87 +401,35 @@ footer ul li a:hover {
     padding: 10px 0 0 0;
 }
 
-/* Styling the area of the slides */
-#slideshow {
-    width: 100%;
-    height: auto;
-}
-
-/* Add animation to the slides */
-.slide-wrapper {
-/* Calculate the total width on the
-    basis of number of slides */
-    width: calc(100% * 4);
-
-/* Specify the animation with the
-    duration and speed */
-    animation: slide 20s ease infinite;
-
-    pointer-events: none;
-}
-.slide-wrapper:hover {
-    animation-play-state: paused;
-}
-
 /* Style each of the sides
 with a fixed width and height */
-.slide {
-    float: left;
-    width: 25%;
-    height: auto;
-    text-align: center;
-    margin: 20px auto;
-
-    pointer-events: none;
-}
-.slide img{
-    pointer-events: auto;
-}
 
 .slide-number {
     max-width: 60%;
-    max-height: 500px;
+    max-height: 800px;
+    object-fit: cover;
 }
 
-/* Set the background color
-of each of the slides */
-.slide:nth-child(1) {
-    background: azure;
+swiper-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
 }
 
-.slide:nth-child(2) {
-    background: azure;
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slide:nth-child(3) {
-    background: azure;
-}
-
-.slide:nth-child(4) {
-    background: azure;
-}
-
-/* Define the animation
-for the slideshow */
-@keyframes slide {
-    
-/* Calculate the margin-left for
-    each of the slides */
-    20% {
-    margin-left: 0%;
-    }
-
-    40% {
-    margin-left: calc(-100% * 1);
-    }
-
-    60% {
-    margin-left: calc(-100% * 2);
-    }
-
-    80% {
-    margin-left: calc(-100% * 3);
-    }
+swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ----------------------------------------- */
