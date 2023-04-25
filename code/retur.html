@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Retur - Melbo Sko AS</title>
+        <link rel="stylesheet" type="text/css" href="felles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="Pictures/melbo-logo.png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <header>
+        <!--Info om netthandel hos Melbo Sko AS-->
+        <div class="netthandel-info">
+            <ul>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png" alt="Hake">Trygg Handel og Rask Levering</b></li>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png" alt="Hake">Personlig Service</b></li>
+                <li><b><img class="hakesymbol" src="pictures/checkmark.png"alt="Hake">30 Dagers Åpent Kjøp</b></li>
+            </ul>
+        </div>
+    </header>
+    <!--------------------------------->
+            <!--Navigasjonsbar-->
+    <!--------------------------------->
+    <nav>
+        <div class="nav-innhold">
+            <div class="top-nav">
+                    <!--Logo-->
+                <div>
+                    <a href="home.html"><img class="logo" src="Pictures/melbo-logo.png" alt="Forside"></a>
+                </div>
+                <!--Øvre del av Navigasjonsbaren-->
+                <!--Login-Ønskeliste-Handlekurv-->
+                <div>
+                    <ul class="login-onskeliste-handlekurv">
+                        <li><a href="login.html"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/login-icon.png" alt="Logg inn"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/heart-icon.png" alt="Hjerte"></a></li>
+                        <li><a href="#"><img class="login-onskeliste-handlekurv-ikon" src="Pictures/basket-icon.png" alt="Handlekurv"></a></li>
+                    </ul>
+                </div>
+                <!--Søkefelt-->
+                <div class="searchbar">
+                    <form action="#">
+                        <input type="text" placeholder="Søk..." name="search">
+                        <div class="fa fa-search" style="float:right;"></div>
+                    </form>
+                </div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="home.html">Forside</a>
+                        <a href="products.html">Produkter</a>
+                        <a href="blog.html">Blogg</a>
+                        <a href="login.html">Login</a>
+                        <a href="#">Ønskeliste</a>
+                        <a href="#">Handlekurv</a>
+                    </div>
+                </div>
+                <div class="burger-btn">
+                    <span onclick="openNav()">&#9776;</span>
+                    <script src="burger-meny.js"></script>
+                </div>
+            </div>
+            <!--Nedre del av Navigasjonsbaren-->
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="home.html">Forside</a></li>
+                    <li><a href="products.html">Produkter</a></li>
+                    <li><a href="blog.html">Blogg</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="innhold-personvernerklering">
+        <h1 class="personvern-overskrift">Retur</h1>
+        <div class="innhold-personvernerklering">
+            <article class="innhold-personvernerklering p">
+                <p>Morbi vitae magna non odio tristique fermentum vel ut nibh. Maecenas tempus quam vitae mi consequat efficitur. Sed molestie ultricies tellus id ultricies. Ut vulputate tempor molestie. Donec consequat, nisi id malesuada luctus, elit purus ullamcorper ligula, vitae fringilla eros dui eu elit. Etiam id leo viverra, sollicitudin est vitae, congue dui.
+                     Proin vitae velit luctus, feugiat quam non, commodo mauris. Quisque maximus, erat sit amet venenatis gravida, dolor ligula tempor nibh, non molestie ex diam ultricies nibh.</p>
+            
+                <p>In sed vulputate ligula. Nullam lacus metus, faucibus a nisl eu, bibendum ultrices lorem. Quisque non tellus sit amet nunc cursus molestie a sed tellus. Pellentesque molestie eros eros, a rutrum est semper sit amet. Aliquam erat volutpat. Ut ante mauris, semper ut felis a, dictum imperdiet arcu. Ut pulvinar velit nec enim scelerisque posuere.
+                     Phasellus nulla quam, molestie sit amet metus sed, aliquam convallis risus. Pellentesque ut euismod nunc. Nulla ut condimentum leo.</p>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-elements">
+            <div id="Kundeservice">
+                <h3>Kundeservice</h3>
+                <ul>
+                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="">Størrelseguide</a></li>
+                    <li><a href="">Ofte stilte spørsmål</a></li>
+                    <li><a href="">Reparering av sko</a></li>
+                </ul>
+            </div>
+            <div id="Kjøpsinformasjon">
+                <h3>Kjøpsinformasjon</h3>
+                <ul>
+                    <li><a href="">Kjøpsbetingelser i nettbutikk</a></li>
+                    <li><a href="">Retur</a></li>
+                    <li><a href="">Levering og frakt</a></li>
+                    <li><a href="">Reklamasjon og garanti</a></li>
+                </ul>
+            </div>
+            <div id="Melbosko">
+                <h3>Melbo sko</h3>
+                <ul>
+                    <li><a href="">KundeKlubb</a></li>
+                    <li><a href="">Medlemsfordeler</a></li>
+                    <li><a href="">Nyhetsbrev</a></li>
+                    <li><a href="">Ledige stillinger</a></li>
+                    <li><a href="personvernerklæring.html">Personvernerklæring</a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
