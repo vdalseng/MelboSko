@@ -827,7 +827,7 @@ input:focus{
 
 .innlegg-linker iframe {
     width: 40%;
-    height: 50vh;
+    height: 200vh;
     overflow: auto;
 }
 
