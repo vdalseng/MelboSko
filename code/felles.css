@@ -277,7 +277,7 @@ nav input[type=text]{
     border-radius: 10px;
     font-size: 1.2rem;
 }
-
+    
 .innlogging input[type=password] {
     padding: 15px;
     width: 90%;
@@ -1097,7 +1097,7 @@ input:focus{
     }
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 600px) {
     .netthandel-info {
         display: none;
     }
